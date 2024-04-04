@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function LandingPage() {
   return (
-    <div className="">
-      <div className="relative px-6 pt-14 lg:px-8">
+    <div className="flex min-h-screen flex-col items-center overflow-hidden justify-center">
+      <div className="relative px-6 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true">

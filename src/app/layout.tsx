@@ -8,7 +8,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from './header';
 
 export const metadata: Metadata = {
-  title: 'DevFinder',
+  title: 'Devs',
   description: 'Find your next developer',
 };
 

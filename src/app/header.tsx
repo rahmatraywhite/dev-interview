@@ -52,7 +52,6 @@ function AccountDropdown() {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant={'link'}>
@@ -72,7 +71,6 @@ function AccountDropdown() {
             }>
             <LogOutIcon className="mr-2" /> Sign Out
           </DropdownMenuItem>
-
           <DropdownMenuItem
             onClick={() => {
               setOpen(true);
@@ -90,26 +88,23 @@ export function Header() {
   const isLoggedIn = !!session.data;
 
   return (
-    <header className="bg-gray-100 py-2 dark:bg-gray-900 z-10 relative">
+    <header className="bg-gray-100 py-4 dark:bg-gray-900 z-10 relative">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="flex items-center text-xl hover:underline">
-          DevFinder
+        <Link href="/" className="flex items-center font-bold text-xl">
+          Devs
         </Link>
-
         <nav className="flex gap-8">
           {isLoggedIn && (
             <>
               <Link className="hover:underline" href="/browse">
                 Browse
               </Link>
-
               <Link className="hover:underline" href="/your-rooms">
                 Your Rooms
               </Link>
             </>
           )}
         </nav>
-
         <div className="flex items-center gap-4">
           {isLoggedIn && <AccountDropdown />}
           {!isLoggedIn && (
