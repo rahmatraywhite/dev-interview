@@ -765,6 +765,9 @@ video {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
@@ -773,6 +776,9 @@ video {
 }
 .grid {
   display: grid;
+}
+.hidden {
+  display: none;
 }
 .aspect-\[1155\/678\] {
   aspect-ratio: 1155/678;
@@ -813,6 +819,9 @@ video {
 .h-px {
   height: 1px;
 }
+.h-6 {
+  height: 1.5rem;
+}
 .max-h-screen {
   max-height: 100vh;
 }
@@ -845,6 +854,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-6 {
+  width: 1.5rem;
 }
 .min-w-\[8rem\] {
   min-width: 8rem;
@@ -994,6 +1006,9 @@ video {
 .rounded-sm {
   border-radius: calc(var(--radius) - 4px);
 }
+.rounded {
+  border-radius: 0.25rem;
+}
 .border {
   border-width: 1px;
 }
@@ -1005,6 +1020,10 @@ video {
 }
 .border-transparent {
   border-color: transparent;
+}
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 .bg-background {
   background-color: hsl(var(--background));
@@ -1249,6 +1268,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
 .underline-offset-4 {
   text-underline-offset: 4px;
 }
@@ -1357,6 +1380,10 @@ video {
   color: hsl(var(--muted-foreground));
 }
 
+.hover\:border-transparent:hover {
+  border-color: transparent;
+}
+
 .hover\:bg-accent:hover {
   background-color: hsl(var(--accent));
 }
@@ -1390,12 +1417,22 @@ video {
   background-color: hsl(var(--secondary) / 0.8);
 }
 
+.hover\:bg-gray-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .hover\:text-accent-foreground:hover {
   color: hsl(var(--accent-foreground));
 }
 
 .hover\:text-foreground:hover {
   color: hsl(var(--foreground));
+}
+
+.hover\:text-gray-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -1689,6 +1726,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.dark\:text-gray-400:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
 
   .sm\:-top-80 {
@@ -1764,6 +1806,14 @@ video {
 }
 
 @media (min-width: 768px) {
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
 
   .md\:max-w-\[420px\] {
     max-width: 420px;

@@ -93,26 +93,28 @@ export function Header() {
         <Link href="/" className="flex items-center font-bold text-xl">
           Devs
         </Link>
-        <nav className="flex gap-8">
-          {isLoggedIn && (
-            <>
-              <Link className="hover:underline" href="/browse">
-                Browse
-              </Link>
-              <Link className="hover:underline" href="/your-rooms">
-                Your Rooms
-              </Link>
-            </>
-          )}
-        </nav>
-        <div className="flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-8">
+          <nav className="flex gap-8">
+            {isLoggedIn && (
+              <>
+                <Link className="hover:underline" href="/browse">
+                  Browse
+                </Link>
+                <Link className="hover:underline" href="/your-rooms">
+                  Your Rooms
+                </Link>
+              </>
+            )}
+          </nav>
           {isLoggedIn && <AccountDropdown />}
+        </div>
+        <div className="flex items-center md:hidden gap-4">
+          <ModeToggle />
           {!isLoggedIn && (
             <Button onClick={() => signIn()} variant="link">
               <LogInIcon className="mr-2" /> Sign In
             </Button>
           )}
-          <ModeToggle />
         </div>
       </div>
     </header>

@@ -20,6 +20,17 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/browse/page.js"
+    ],
+    "/create-room/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/create-room/page.js"
+    ],
+    "/rooms/[roomId]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/rooms/[roomId]/page.css",
+      "static/chunks/app/rooms/[roomId]/page.js"
     ]
   }
 }

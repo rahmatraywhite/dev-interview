@@ -1,6 +1,8 @@
 {
   "/page": "app/page.js",
   "/your-rooms/page": "app/your-rooms/page.js",
+  "/rooms/[roomId]/page": "app/rooms/[roomId]/page.js",
   "/browse/page": "app/browse/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/create-room/page": "app/create-room/page.js"
 }
