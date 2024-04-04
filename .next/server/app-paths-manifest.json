@@ -1,0 +1,8 @@
+{
+  "/rooms/[roomId]/page": "app/rooms/[roomId]/page.js",
+  "/your-rooms/page": "app/your-rooms/page.js",
+  "/page": "app/page.js",
+  "/browse/page": "app/browse/page.js",
+  "/create-room/page": "app/create-room/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
+}
